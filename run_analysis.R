@@ -88,6 +88,13 @@ data.subjectactivity <- unique(data[,c(1,2)]) #get unique subject and activity c
 
 finaldata <- cbind(data.subjectactivity, newdata) #combine subject, activity, and features.
 
+#change col names to reflect averages
+avgcolnames <- names(finaldata)[3:68]
+newnames <- c()
+for(name in avgcolnames){
+  newnames <- c(newnames, paste("Avg.", name, sep = ""))
+}
+names(finaldata) <- c("Subject", "Activity", newnames)
 
 #Write dataframe (finaldata) to tidydata.txt 
 write.table(finaldata, file = "tidydata.txt")
