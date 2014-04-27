@@ -19,7 +19,7 @@ It will generate two outputs:
   - it will also contain the subject id and the activity they were performing during the measurement
 
 - the second output, "tidydata.txt", contains the average of each variable for each activity and each subject.
-  - note that the column names have be renamed to start with "Avg." to reflect that these values are averages of corresponding raw data from dataoutput.txt
+  - note that the column names have be renamed to start with "avg." to reflect that these values are averages of corresponding raw data from dataoutput.txt
 
 Both outputs are written to the working directory.
 
