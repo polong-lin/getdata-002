@@ -18,7 +18,7 @@ It will generate two outputs:
 - the first output, "dataoutput.txt" contains all the means and standard deviations for all features collected by the hardware
   - it will also contain the subject id and the activity they were performing during the measurement
 
-- the second output, "tidydata.txt", contains only the feature means, grouped by Subject and Activity performed.
+- the second output, "tidydata.txt", contains the average of each variable for each activity and each subject.
 
 Both outputs are written to the working directory.
 
