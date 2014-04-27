@@ -73,6 +73,9 @@ x_data_meanstd <- x_data[,matchesvalue]
 #Combine Feature Data (x_data_meanstd) with Subject, Activity dataset (data)
 data <- cbind(data, x_data_meanstd)
 
+#Write dataframe to file
+write.table(data, "dataoutput.txt") #note: this is not the tidy data output, which is written at the end of the script
+
 ### Take averages of the features, for each combination of Subject and Activity
 
 data_bysubject <- split(data[,3:68], list(data$Subject, data$Activity))
